@@ -25,13 +25,13 @@ body {
   font-weight: bold;
 }
 
-#comments {
+#show-comments {
   background: #ECECFF;
   padding: 1px 20px;
 }
-#comments .comment {
+#show-comments .comment {
 }
-#comments .comment + .comment {
+#show-comments .comment + .comment {
   border-top: 1px dashed #aaa;
 }
 

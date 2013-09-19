@@ -11,12 +11,12 @@ var comments = [
 
 var render = function () {
   // Empty the comments content div so that we don't duplicate comments
-  $('#comments .content').empty();
+  $('#show-comments .content').empty();
 
   // For each comment, generate html and add it to the page
   for (var i = 0; i < comments.length; i += 1) {
     var newCommentHtml = commentTemplate( comments[i] );
-    $('#comments .content').append(newCommentHtml);
+    $('#show-comments .content').append(newCommentHtml);
   }
 };
 
