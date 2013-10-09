@@ -11,3 +11,9 @@ _.mixin({
     return x + y * z;
   }
 });
+
+_.mixin({
+  getTemplate: function (name) {
+    return _.template( $('#templates .' + name).html() );
+  }
+});
