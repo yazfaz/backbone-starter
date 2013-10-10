@@ -1,21 +1,23 @@
 (function (){
 
-  var product = new Product({
-    name: "computer"
-  });
+  var firstInventory = new Inventory();
+ 
 
-  var productView = new ProductView({
-    model:product,
+  var firstStoreView = new StoreView({
+    collection: firstInventory,
     el: '#store'
   });
 
-  productView.render();
-  console.log("Render productView el: " , productView.el);
+  firstInventory.add([
+    {name: 'computer'},
+    {name: 'phone'},
+    {name: 'water'}
+    ]);
 
-
-
-
-
-
+ var cart = new Inventory();
+ var shoppingCart = new ShoppingCartView({
+  collection: cart,
+  el: '#shopping-cart'
+ });
 
 })();

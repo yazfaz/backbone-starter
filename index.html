@@ -6,10 +6,11 @@
 <body>
 
 <div id="store"></div>
-
+<div id="shopping-cart"></div>
 <div id="templates">
   <script class = "product" type="text/template">
     {{name}}
+    <button>Add-to-Cart</button>
   </script>
 </div>
 
@@ -20,10 +21,14 @@
 
 <!-- Globals -->
 <script src="src/util.js" type="text/javascript"></script>
+<script src="src/global.js" type="text/javascript">
+</script>
 <!-- Models -->
 <script src="src/models/product.js" type="text/javascript"></script>
 <!-- Views -->
 <script src="src/views/product-view.js" type="text/javascript"></script>
+<script src="src/views/store-view.js" type="text/javascript"></script>
+<script src="src/views/shopping-cart-view.js" type="text/javascript"></script>
 <!-- Main Entry -->
 <script src="src/main.js" type="text/javascript"></script>
 
